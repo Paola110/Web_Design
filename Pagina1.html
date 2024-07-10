@@ -1,0 +1,77 @@
+<!DOCTYPE html> <!-- Declara que es de la ultima version de html, se debe poner siempre al inicio -->
+<html > <!-- Adentro de esta esta todo lo que tiene la pagina -->
+  <head> <!-- Aqui va todo lo que no podemos ver de la pagina -->
+    <title> Primera pagina web </title> <!-- Titulo de la pagina -->
+  </head>
+  <body> <!-- Aqui va todo lo que podemos ver de la pagina -->
+    <h1>Hola Mundo</h1> <!-- Titulo dentro de la pagina, una sola vez-->
+    <h2>Hola Mundo</h2> <!-- Podemos poner h2 y h3 2 o 3 veces -->
+    <h3>Hola Mundo</h3>
+    <h4>Hola Mundo</h4> <!-- Podemos poner h4 - h6 muchas veces depende del contexto -->
+    <h5>Hola Mundo</h5>
+    <h6>Hola Mundo</h6>
+    <p> <!-- Texto para hacer parrafos -->
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga placeat eveniet suscipit labore possimus! Ipsum atque placeat molestiae dicta enim laboriosam iure eveniet doloribus tempora labore? Nihil eligendi incidunt ipsa.
+    </p>
+    <b>Negrita</b> <!-- Formatos que le podamos dar al texto -->
+    <i>Italica</i>
+    <strike>Tachada</strike>
+    <small>Letra chica</small>
+
+    <br><br> <!-- Salto de linea -->
+    <a href="https://youtube.com">Click aqui para ir a Youtube</a> <!-- Nos manda a una ruta en internet -->
+    <br><br>
+
+    <!-- Nos manda a una ruta local, en este caso, otra pagina web -->
+    <a href="Pagina2.html">Click aqui </a>para ir a la pagina 2
+    <a href="index.html">Clik aqui</a> para regresar al inicio
+
+                                <!--target abre la pestaña en una pagina en "_blank", blanco-->
+    <br><br><a href="https://google.com" target="_blank">Clik aqui</a> para abrir google en una pagina nueva
+
+    <h2>Lista de compras</h2> <!--Lista enumerada o con viñetas-->
+    <ul>
+      <li>Lista</li>
+      <li>con</li>
+      <li>puntos</li>
+    </ul>
+    <ol>
+      <li>Lista</li>
+      <li>con</li>
+      <li>numeros</li>
+    </ol>
+
+    <p>Ponemos una imagen de un mago lindo</p>
+    <!-- Insertamos una imagen, podemos darle alto y ancho -->
+    <img src="Imagen_prueba.png" width="150" height="140">
+
+    <p>Ponemos un video</p>
+    <!-- Insertamos video, debemos poner "controls" -->
+    <video src="Video_prueba.mov" controls="" width="300"></video>
+
+    <p>Ponemos un audio</p>
+    <!-- Insertamos un audio, debemos poner "controls" -->
+    <audio src="Video_prueba.mov" controls=""></audio>
+
+    <div></div> <!-- Divide partes de codigo para crear "cajas" -->
+
+    <form>
+      <!-- Input es entrada de datos, name define el nombre del input con el que podemos pedir ese dato-->
+      <p>Nombre: </p><input type="text" name="nombre"><br>
+      <p>Contrasena: </p><input type="password"><br>
+      <p>Numero: </p><input type="number"><br>
+      <p>Email: </p><input type="email"><br>
+      <p>Color: </p><input type="color"><br>
+      <p>Rango: </p><input type="range" min="0" max="10" name="calificacion"><br>
+      <p>Dia: </p><input type="date"><br>
+      <p>Tiempo: </p><input type="time"><br>
+      <!-- Al ser pulsado aparecera el value -->
+      <p>Boton: </p><input type="button" value="Boton"><br>
+      <p>Checkbox: </p><input type="checkbox"><br>
+      <p>Radio: </p><input type="radio"><br>
+      <!-- Envia los datos de los inputs anteriores -->
+      <p>Enviar: </p><input type="submit"><br>
+    </form>
+
+  </body>
+</html>
