@@ -1,19 +1,84 @@
 <!DOCTYPE html>
-<html>
+<html lang="es-MX">
+
   <head>
     <title>Creacion de la pagina web</title>
+
+    <meta charset="utf-8">
+    <meta name="keywords" content="estas,son,las,keywords">
+    <meta name="description" content="Ejemplo de primera pagina web ya estructurada">
+    <meta name="author" content="Paola Osorio">
+    <meta name="copyright" content="Paola Inc.">
+    <meta name="robots" content="noindex">
+
+    <link rel="icon" href="Icono_prueba.ico">
+
   </head>
+
   <body>
-    <h1>Creacion de tu primer pagina web</h1>
-    <h2>Que pasos debes seguir para crear tu primera pagina web?</h2>
-    <p>
-      Para crear tu primera pagina web debes seguir los siguientes pasos: <br>
-      1. Abrir un editor de texto como por ejemplo notepad++ o sublime text. <br>
-      2. Escribir el codigo HTML basico. <br>
-      3. Guardar el archivo con la extension .html. <br>
-      4. Abrir el archivo en un navegador web. <br>
-      Listo ya creaste tu primera pagina web. <br>
-      <a href="Pagina1.html">Pulsa aqui </a> para ver mi primera pagina
-    </p>
+
+    <header> <!-- Encabezado -->
+      <nav> <!-- Nos manda a distintas partes de la pag -->
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="Pagina1.html">Página 1</a></li>
+          <li><a href="Pagina2.html">Página 2</a></li>
+          <li><a href="#Final">Salta al final de la pagina</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <center>
+      <article>
+        <section>
+          <h2>
+            Página de inicio
+          </h2>
+          <h3>
+            Subtitulo
+          </h3>
+          <p>
+            Nota: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae adipisci magni, eos laborum maxime architecto nostrum alias quis cupiditate saepe repellat, quia cumque ullam voluptatum id expedita voluptatem repellendus necessitatibus.<br>
+            Nota2: Lorem ipsum dolor sit amet consectetur adipisicing elit. In libero ab perferendis ut? Modi, enim, nemo repellat alias suscipit deserunt voluptates, eius veritatis laboriosam nostrum assumenda unde provident. Nostrum, corporis!<br>
+            Nota3: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae eum nobis necessitatibus assumenda porro voluptatem, iusto veniam, rerum incidunt quo enim quibusdam asperiores tenetur suscipit corporis numquam omnis. Culpa, ipsam.
+          </p>
+        </section>
+        <section>
+          <h3>
+            Poner formato a imagen
+          </h3>
+          <img src="Imagen_prueba.png" alt="Mago lindo" title="Mago lindo" width="190" height="190">
+        </section>
+      </article>
+      <aside>
+        <h3>
+          Contenido extra
+        </h3>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit sint autem pariatur, earum voluptatibus unde qui, dolor dolorum maxime dolore corporis numquam doloribus quam sed nihil voluptates facere asperiores. Vitae!
+        </p>
+      </aside>
+
+      <table border="1px">
+        <tr>
+          <td><b>Nombre</b></td>
+          <td><b>Apellido</b></td>
+          <td><b>Redes</b></td>
+        </tr>
+        <tr>
+          <td>Paola Montserrat</td>
+          <td>Osorio Garcia</td>
+          <td>Paola@Osorio</td>
+        </tr>
+      </table>
+    </center>
+    <h4 id="Final">Este es el final de la pagina</h4>
+    <footer>
+      <h4>
+        Copyright - Derechos reservados para Paola :)
+      </h4>
+    </footer>
+
   </body>
+
 </html>

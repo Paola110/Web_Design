@@ -6,6 +6,17 @@ Con CSS "pintamos" y personalizamos la pagina
 "index.html" es lo primero que se muestra en la pagina cuando se abre
 Su sintaxis se basa en etiquetas, las "cajas"
 
+# Partes de una pagina web
+
+    Header = Encabezado, se mantiene arriba
+        Nav = Navegamos entre diferentes sitios de la pagina
+    Articulo = Cuerpo de la pagina
+        Seccion = Secciones para dividir el articulo
+    Aside = Parte que va en la lateral
+    Footer (pie de pagina) = Informacion de la pagina
+
+    Tablas = Agrupacion de datos en tablas
+
 # Etiquetas
 
 <etiqueta atributo = "valor"></etiqueta>   Con esto creamos un "objeto"
@@ -16,20 +27,56 @@ Existen dos tipos de etiquetas:
     Las etiquetas que se abren pero no necesitan cerrarla
 
 <!DOCTYPE html>  # Declara que es de la ultima version de html, se debe poner siempre al inicio
-<html>  # Adentro de esta esta todo lo que tiene la pagina
+
+ lang="es-MX" determina que la pagina estara en español
+<html lang="es-MX">  # Adentro de esta esta todo lo que tiene la pagina
 
   <head> # Aqui va todo lo que no podemos ver de la pagina
     <title> Primera pagina web </title> # Titulo de la pagina
+
+    # Metadatos es informacion que describe datos, los recursos
+
+    Metadatos es informacion que describe datos, los recursos
+    Charset (conjunto de caracteres) codificados en utf-8 (pone acentos)
+         Keywords con las que se reconocera a la pagina al hacer una busqueda
+         Descripcion del contenido de la pagina
+         Autor de la pagina
+         Copyright a que empresa le pertenecen los derechos de la pagina
+         Robots si es indexable o noindex, mostrar o no la pagina si busca algo y aparesca como opcion
+
+    <meta charset="utf-8">
+    <meta name="keywords" content="estas,son,las,keywords">
+    <meta name="description" content="Ejemplo de primera pagina web con muestras de como funcionan las etiquetas">
+    <meta name="author" content="Paola Osorio">
+    <meta name="copyright" content="Paola Inc.">
+    <meta name="robots" content="noindex">
+
+    Inserta un icono de la pagina
+    <link rel="icon" href="Icono_prueba.ico">
+
   </head>
 
   <body> # Aqui va todo lo que podemos ver de la pagina
 
-    <h1>Hola Mundo</h1> # Titulo dentro de la pagina, existen varios "headers", h1, h2, h3 ... h6
-    <h2>Hola Mundo</h2> Podemos poner h2 y h3 2 o 3 veces
-    <h3>Hola Mundo</h3>
-    <h4>Hola Mundo</h4> Podemos poner h4 - h6 muchas veces depende del contexto
-    <h5>Hola Mundo</h5>
-    <h6>Hola Mundo</h6>
+    <header>  Encabezado
+      <nav>  Nos manda a distintas partes de la pag
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="Pagina1.html">Página 1</a></li>
+          <li><a href="Pagina2.html">Página 2</a></li>
+        </ul>
+      </nav>
+
+    </header>
+
+    <center>
+        <h1>Hola Mundo</h1> # Titulo dentro de la pagina, existen varios "headers", h1, h2, h3 ... h6
+        <h2>Hola Mundo</h2> Podemos poner h2 y h3 2 o 3 veces
+        <h3>Hola Mundo</h3>
+        <h4>Hola Mundo</h4> Podemos poner h4 - h6 muchas veces depende del contexto
+        <h5>Hola Mundo</h5>
+        <h6>Hola Mundo</h6>
+    </center>
 
     <p> # Texto para hacer parrafos
       Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga placeat eveniet suscipit labore possimus! Ipsum atque placeat molestiae dicta enim laboriosam iure eveniet doloribus tempora labore? Nihil eligendi incidunt ipsa.
@@ -65,6 +112,62 @@ Existen dos tipos de etiquetas:
       <li>con</li>
       <li>numeros</li>
     </ol>
+
+
+    <p>Ponemos una imagen de un mago lindo</p>
+    Insertamos una imagen, podemos darle alto y ancho, alt le da un texto alternativo a la imagen por si no aparece y el title nos muestra de lo que trata la imagen al pasar por encima el cursor
+    <img src="Imagen_prueba.png" alt="Mago_lindo" title="Mago lindo" width="150" height="140">
+
+    <p>Ponemos un video</p>
+     Insertamos video, debemos poner "controls"
+    <video src="Video_prueba.mov" controls="" width="300"></video>
+
+    <p>Ponemos un audio</p>
+     Insertamos un audio, debemos poner "controls"
+    <audio src="Video_prueba.mov" controls=""></audio>
+
+    <div></div>  Divide partes de codigo para crear "cajas"
+
+     Todo lo de adentro del "post" se mandara al oprimir el boton submit
+    <form method="post">
+
+       # Input es entrada de datos
+       # Type es el tipo de dato que dejara ingresar y como lo mostrara
+       # Name define el nombre del input con el que podemos pedir ese dato
+       # Required significa que se necesita el campo para poderlo mandar
+       # El value es lo que aparecera de manera predeterminada o como nombre de un boton
+
+      <p>Nombre: </p><input type="text" name="nombre" required="" value="Predeterminado"><br>
+      <p>Contrasena: </p><input type="password" required=""><br>
+      <p>Numero: </p><input type="number" required=""><br>
+      <p>Email: </p><input type="email" required=""><br>
+      <p>Color: </p><input type="color"><br>
+      <p>Rango: </p><input type="range" min="0" max="10" name="calificacion"><br>
+      <p>Dia: </p><input type="date"><br>
+      <p>Tiempo: </p><input type="time"><br>
+      <p>Boton: </p><input type="button" value="Boton"><br>
+      <p>Checkbox: </p><input type="checkbox"><br>
+      <p>Radio: </p><input type="radio"><br> // Boton circular
+      <textarea readonly="" >Este texto no se puede modificar, se puede modificar el tamaño del cuadro</textarea><br>
+
+       Envia los datos de los inputs anteriores
+      <p>Enviar: </p><input type="submit"><br><br>
+
+    </form>
+
+    Insertamos una tabla, le podemos poner borde
+    <table border="1px">
+      <tr> Definimos una fila
+        <td><b>Nombre</b></td>
+        <td><b>Apellido</b></td>
+        <td><b>Redes</b></td>
+      </tr>
+      <tr>
+        <td>Paola Montserrat</td>
+        <td>Osorio Garcia</td>
+        <td>Paola@Osorio</td>
+      </tr>
+    </table>
 
   </body>
 
