@@ -1,4 +1,5 @@
 # HTML, CSS, JS
+# Curso en youtube = "https://youtu.be/kN1XP-Bef7w?si=pXnbTQvxioUjdXvQ"
 
 Con HTML hacemos "cuadros" para ingresar cosas y estructurar la pagina
 Con CSS "pintamos" y personalizamos la pagina
