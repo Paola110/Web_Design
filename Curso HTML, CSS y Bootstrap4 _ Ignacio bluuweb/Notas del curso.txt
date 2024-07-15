@@ -1,0 +1,8 @@
+# HTML, CSS y Bootstrap
+
+# Curso en Udemy = "https://www.udemy.com/share/101sek3@7Io3CHkAd5fUfK83a9S94ULKuO7cDw4w28CChCVHeu9M_V8_5ELdboNK6UgNDaLNJA==/"
+
+# Frontend son tecnologias que se empleam del lado del cliente (HTML, CSS y JS)
+
+# Backend son servicios que se ejecutan por el lado del servidor, incluyendo las bases de datos(Java, PHP, Phyton, Ruby, NodeJS, C#, entre otros)
+
