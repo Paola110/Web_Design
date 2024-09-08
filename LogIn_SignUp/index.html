@@ -2,7 +2,7 @@
 <html lang="es-MX">
   <head>
     <title>
-      LogIn SignUp
+      Inicio de sesion
     </title>
     <meta charset="utf-8">
     <meta name="keywords" content="Headworks, HW, Head, works">
@@ -12,54 +12,60 @@
     <meta name="copyright" content="Headworks">
 
     <link rel="icon" herf="">
-    <link rel="stylesheet" herf="styles.css">
+    <link rel="stylesheet" href="styles.css">
   </head>
 
   <body>
     <header>
       <nav>
-        <h2><a href="index.html">Iniciar Sesion</a></h2>
+        <h2>
+          <a href="#LoginForm" class="header-link"> Iniciar Sesion </a>
+          <a href="#SignUpForm" class="header-link"> Crear Cuenta </a>
+        </h2>
       </nav>
     </header>
 
-    <div class="form-container">
-        <form id="Login" class="form">
-            <h2>Iniciar Sesion</h2>
-            <div class="input-group">
-                <label for="LoginEmail">Ingrese su correo</label>
-                <input type="email" id="loginEmail" name="email" required><br>
-            </div>
-            <div class="input-group">
-                <label for="loginPassword">Contraseña</label>
-                <input type="password" id="loginPassword" name="password" required>
-            </div>
-            <button type="submit">Iniciar sesion</button>
-            <p class="switch-form">No tiene cuenta? <a href="#" id="showSignUp">Crear una cuenta</a></p>
+    <div class="container">
+      <div class="form-container">
+        <form id="LoginForm" class="form" method="post">
+          <h2>Iniciar Sesion</h2>
+          <div class="input-group">
+            <label for="LoginEmail">Ingrese su correo</label>
+            <input type="email" id="loginEmail" name="email" required><br>
+          </div>
+          <div class="input-group">
+            <label for="loginPassword">Contraseña</label>
+            <input type="password" id="loginPassword" name="password" required>
+          </div>
+          <button type="submit">Iniciar sesion</button>
+          <p class="switch-form">No tiene cuenta? <a href="#SignUpForm" id="showSignUp">Crear una cuenta</a></p>
         </form>
 
-        <form id="SignUpForm" class="form hidden">
-            <h2>Crear una cuenta</h2>
-            <div class="input-group">
-                <label for="signUpLastName">Apellidos</label>
-                <input type="text" id="signUpLastName" name="lastname" required><br>
-                <label for="signUpName">Nombre/s</label>
-                <input type="text" id="signUpName" name="name" required>
-            </div>
-            <div class="input-group">
-                <label for="signUpEmail">Ingrese un correo</label>
-                <input type="email" id="signUpEmail" name="email" required><br>
-                <label for="signUpVerifyEmail">Verifique su correo</label>
-                <input type="email" id="signUpVerifyEmail" name="verifyemail" required>
-            </div>
-            <div class="input-group">
-                <label for="signUpPassword">Contraseña</label>
-                <input type="password" id="signUpPassword" name="password" required><br>
-                <label for="signUpVerifyPassword">Verifique su contraseña</label>
-                <input type="password" id="signUpVerifyPassword" name="verifypassword" required>
-            </div>
-            <button type="submit">Crear cuenta</button>
-            <p class="switch-form">Ya tiene una cuenta? <a href="#" id="showLogin">Inciar sesion</a></p>
+        <form id="SignUpForm" class="form hidden" method="post">
+          <h2>Crear una cuenta</h2>
+          <div class="input-group">
+            <label for="signUpLastName">Apellidos</label>
+            <input type="text" id="signUpLastName" name="lastname" required><br>
+            <label for="signUpName">Nombre/s</label>
+            <input type="text" id="signUpName" name="name" required>
+          </div>
+          <div class="input-group">
+            <label for="signUpEmail">Ingrese un correo</label>
+            <input type="email" id="signUpEmail" name="email" required><br>
+            <label for="signUpVerifyEmail">Verifique su correo</label>
+            <input type="email" id="signUpVerifyEmail" name="verifyemail" required>
+            <span id="emailWarning" class="warning"></span> <div class="input-group">
+            <label for="signUpPassword">Contraseña</label>
+            <input type="password" id="signUpPassword" name="password" required><br>
+            <label for="signUpVerifyPassword">Verifique su contraseña</label>
+            <input type="password" id="signUpVerifyPassword" name="verifypassword" required>
+            <span id="passwordWarning" class="warning"></span>
+          </div>
+          <button type="submit">Crear cuenta</button>
+          <p class="switch-form">Ya tiene una cuenta? <a href="#Login" id="showLogin">Inciar sesion</a></p>
+          </div>
         </form>
+
     </div>
 
     <script src="script.js"></script>

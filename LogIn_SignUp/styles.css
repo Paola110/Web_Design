@@ -1,0 +1,117 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    background-color: #fff; /* Example background color */
+    padding: 5px; /* Add padding for spacing */
+    margin-bottom: 15px; /* Add spacing between header and content */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optional shadow */
+    text-align: center; /* Center the header content */
+    justify-content: space-around;
+    border-radius: 20px;
+}
+
+.header-link {
+    word-spacing: 5px; /* Adjust the value as needed */
+    display: inline-block; /* Make links behave like inline-blocks */
+    padding: 10px 10px;    /* Add padding for the box look */
+    background-color: lightgray; /* Set the grey background */
+    color: #333;            /* Dark grey text color */
+    text-decoration: none;   /* Remove underlines */
+    border-radius: 15px;      /* Optional rounded corners */
+    margin: 0 5px;          /* Add spacing between links */
+    cursor: pointer;
+}
+
+.header-link:hover {
+    background-color: rgb(144, 142, 142);
+}
+
+
+nav {
+    text-align: center; /* Center links in the header */
+    justify-content: space-evenly;
+}
+
+h2 {
+    margin-bottom: 10px; /* Add spacing below the h2 */
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+}
+.form-container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.form.active {
+    display: block;
+}
+.input-group {
+    margin-bottom: 15px;
+}
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+button:hover {
+    background-color: #45a049;
+}
+.switch-form {
+    text-align: center;
+    margin-top: 15px;
+}
+.switch-form a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.switch-form a:hover {
+    text-decoration: underline;
+}
+
+.hidden {
+    display: none;
+}
+.warning {
+    color: red;
+    font-size: 12px;
+    display: none; /* Initially hide the warnings */
+}
