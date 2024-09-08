@@ -28,13 +28,13 @@ document.addEventListener('DOMContentLoaded', function() {
     const signupForm = document.getElementById('SignUpForm');
 
     loginLink.addEventListener('click', function(event) {
-        event.preventDefault(); // Prevent default link jump
+        event.preventDefault();
         loginForm.classList.remove('hidden');
         signupForm.classList.add('hidden');
     });
 
     signupLink.addEventListener('click', function(event) {
-        event.preventDefault(); // Prevent default link jump
+        event.preventDefault();
         signupForm.classList.remove('hidden');
         loginForm.classList.add('hidden');
     });
@@ -48,19 +48,19 @@ document.addEventListener('DOMContentLoaded', function() {
 
     signupForm.addEventListener('submit', function(event) {
         if (signUpPassword.value !== signUpVerifyPassword.value) {
-            event.preventDefault(); // Prevent form submission
+            event.preventDefault();
             passwordWarning.textContent = "Las contraseñas no coinciden.";
             passwordWarning.style.display = "block";
         } else {
-            passwordWarning.style.display = "none"; // Hide if passwords match
+            passwordWarning.style.display = "none";
         }
 
         if (signUpEmail.value !== signUpVerifyEmail.value) {
-            event.preventDefault(); // Prevent form submission
+            event.preventDefault();
             emailWarning.textContent = "Los correos electrónicos no coinciden.";
             emailWarning.style.display = "block";
         } else {
-            emailWarning.style.display = "none"; // Hide if emails match
+            emailWarning.style.display = "none";
         }
     });
 

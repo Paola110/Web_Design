@@ -19,24 +19,24 @@ body {
 header {
     display: flex;
     align-items: center;
-    background-color: #fff; /* Example background color */
-    padding: 5px; /* Add padding for spacing */
-    margin-bottom: 15px; /* Add spacing between header and content */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optional shadow */
-    text-align: center; /* Center the header content */
+    background-color: #fff;
+    padding: 5px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
     justify-content: space-around;
     border-radius: 20px;
 }
 
 .header-link {
-    word-spacing: 5px; /* Adjust the value as needed */
-    display: inline-block; /* Make links behave like inline-blocks */
-    padding: 10px 10px;    /* Add padding for the box look */
-    background-color: lightgray; /* Set the grey background */
-    color: #333;            /* Dark grey text color */
-    text-decoration: none;   /* Remove underlines */
-    border-radius: 15px;      /* Optional rounded corners */
-    margin: 0 5px;          /* Add spacing between links */
+    word-spacing: 5px;
+    display: inline-block;
+    padding: 10px 10px;
+    background-color: lightgray;
+    color: #333;
+    text-decoration: none;
+    border-radius: 15px;
+    margin: 0 5px;
     cursor: pointer;
 }
 
@@ -46,12 +46,12 @@ header {
 
 
 nav {
-    text-align: center; /* Center links in the header */
+    text-align: center;
     justify-content: space-evenly;
 }
 
 h2 {
-    margin-bottom: 10px; /* Add spacing below the h2 */
+    margin-bottom: 5px;
 }
 
 .container {
@@ -113,5 +113,5 @@ button:hover {
 .warning {
     color: red;
     font-size: 12px;
-    display: none; /* Initially hide the warnings */
+    display: none; 
 }
